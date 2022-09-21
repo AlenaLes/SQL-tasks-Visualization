@@ -45,3 +45,5 @@ retail — данные о транзакциях британского инт�
 
 DeviceID — идентификатор устройства;
 UserID — идентификатор пользователя.
+
+![Иллюстрация к проекту]([https://github.com/jon/coolproject/raw/master/image/image.png](https://redash.lab.karpov.courses/public/dashboards/nWOdBKXaRga8DHrdHJxy4lgcCMLOlIe29CmpBBCs?org_slug=default))
