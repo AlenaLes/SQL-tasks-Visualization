@@ -47,3 +47,4 @@ DeviceID — идентификатор устройства;
 UserID — идентификатор пользователя.
 
 ![Иллюстрация к проекту](https://github.com/AlenaLes/SQL/blob/main/Dashboard.PNG)
+![Иллюстрация к проекту](https://github.com/AlenaLes/SQL/blob/main/Cohorts_January_Retension.png)
