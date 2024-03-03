@@ -7,13 +7,7 @@ SELECT
     UserId,
     COUNT (*) as NumChecks,
     SUM (Rub) as Revenue
-
-from checks
-
-GROUP BY
-    UserID
-
-order by 
-    NumChecks desc
-
+from checks 
+GROUP BY 1
+order by 2 desc
 limit 10

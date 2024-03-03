@@ -13,8 +13,8 @@ FROM
         Sum(Quantity) AS Quantity 
     FROM default.retail
     WHERE Country == 'United Kingdom'
-    GROUP BY no_month
-    ORDER BY Quantity DESC
+    GROUP BY 1
+    ORDER BY 2 DESC
     LIMIT 20
     ) AS l
 join 
@@ -24,8 +24,8 @@ join
         Sum(Quantity) AS Quantity 
     FROM default.retail
     WHERE Country != 'United Kingdom'
-    GROUP BY no_month
-    ORDER BY Quantity DESC
+    GROUP BY 1
+    ORDER BY 2 DESC
     LIMIT 20
     ) AS r
     ON l.no_month = r.no_month

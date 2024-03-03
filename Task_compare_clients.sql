@@ -13,7 +13,7 @@ FROM
         toStartOfDay(InvoiceDate) AS no_day
     FROM default.retail
     WHERE Country == 'United Kingdom' AND toStartOfMonth(InvoiceDate) == '2011-11-01'
-    GROUP BY no_day
+    GROUP BY 2
     ) AS l
 JOIN
     (
@@ -22,7 +22,7 @@ JOIN
         toStartOfDay(InvoiceDate) AS no_day
     FROM default.retail
     WHERE Country != 'United Kingdom' AND toStartOfMonth(InvoiceDate) == '2011-11-01'
-    GROUP BY no_day
+    GROUP BY 2
     ) AS r
     ON l.no_day = r.no_day
 LIMIT 30

@@ -7,6 +7,6 @@ SELECT
     Sum(Quantity) as  Quantity,
     Sum(UnitPrice) as Benefit
 FROM default.retail
-GROUP BY Description 
-ORDER BY Quantity DESC
+GROUP BY 1 
+ORDER BY 2 DESC
 LIMIT 10
