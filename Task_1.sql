@@ -5,13 +5,7 @@
 SELECT
     UserId,
     COUNT (*) as NumChecks
-
 from checks
-
-GROUP BY
-    UserID
-
-order by 
-    NumChecks desc
-
+GROUP BY 1
+order by 2 desc
 limit 10
